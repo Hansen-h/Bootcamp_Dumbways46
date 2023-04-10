@@ -139,6 +139,8 @@ nav{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 30px #cacaca;
+    padding-bottom: 6px;    
+    height: max-content;
 }
 
 .right-card img{
@@ -155,8 +157,87 @@ nav{
     padding-bottom: 7px;
 }
 
-@media (max-width:858px){
-    nav{
-        flex-direction: row;
+/* hamburger menu */
+.container-hamburger{
+    display: none;
+}
+
+.container-hamburger a{
+    display: flex;
+    background-color: #c5c4c4;
+    flex-direction: column;
+    width: auto;
+    text-decoration: none;
+    color: #414141;
+    text-align: center;
+    border: 3px solid #dbdbdb;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.container-hamburger a:hover{
+    color: #0b0b0b;
+    background-color: #08020262;
+    font-weight: bold;
+}
+
+nav button{
+    border: none;
+    font-size: 20px;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    display: none;
+}   
+
+/* responsive */
+@media only screen and (max-width:950px){
+    .left-card{
+       font-size: small;
+    }
+    .right-card{
+        font-size: small;
+        transition: 0.5s ease-out;
+    }
+    .right-card img{
+        width: 240px;
+        height: 330px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width:756px){
+    .card{
+        flex-direction: column;
+    }
+    .left-card{
+        width: auto;
+    }
+
+    .left-card h1{
+        text-align: center;
+    }
+
+    .icon{
+        justify-content: center;
+    }
+}   
+
+@media only screen and (max-width:685px){
+    /* .container-hamburger{
+        display: block;
+    } */
+
+    nav #open{
+        display: block;
+        cursor: pointer;
+    }
+
+    .left-nav ul li{
+        display: none;
+    }
+
+    .right-nav{
+        display: none;
     }
 }
