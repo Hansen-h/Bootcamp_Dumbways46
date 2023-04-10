@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web | Testimonial</title>
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/testi.css">
+</head>
+<body>
+    <!-- start navbar -->
+    <nav>
+        <div class="left-nav">
+            <img src="./assets/images/logo.png" alt="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addProject.html">My Project</a></li>
+                <li><a href="testi.html" class="active">Testimonial</a></li>
+            </ul>
+        </div>
+        
+        <div class="right-nav">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+
+        <button onclick="showHamburger()" id="open">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="container-hamburger" id="container-hamburger">
+        <a href="index.html">Home</a>
+        <a href="addProject.html">My Project</a>
+        <a href="testi.html">Testimonial</a>
+        <a href="contact-me.html">Contact</a>
+    </div>
+
+    <div class="container-card" id="conten">
+        <header><h1>My Testimonial</h1>
+            <h3>Rating By Star</h3>
+            <div class="rating">
+                <ul>
+                    <li><button onclick="showAll()">ALL</button></li>
+                    <li>
+                        <button onclick="dataFiltered(1)">
+                        1<i class="fa fa-star"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="dataFiltered(2)">
+                        2<i class="fa fa-star"></i>
+                        </button></li>
+                    <li>
+                        <button onclick="dataFiltered(3)">
+                        3<i class="fa fa-star"></i>
+                        </button></li>
+                    <li>
+                        <button onclick="dataFiltered(4)">
+                        4<i class="fa fa-star"></i>
+                        </button></li>
+                    <li>
+                        <button onclick="dataFiltered(5)"> 
+                        5<i class="fa fa-star"></i>
+                        </button></li>
+                </ul>
+            </div>
+        </header>
+        <main id="testi">
+            <!-- <div class="card-project">
+                <div class="content">
+                    <img src="./assets/images/programmin-990x500.jpg" alt="image">
+                    <div class="text">
+                        <p>'Lorem Ipsum has been the industry's standard dummy text ever since the 1500s'</p>
+                    </div>
+                    <span><p>- Surya surya</p></span>
+                </div>
+            </div> -->
+        </main>
+    </div>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/testi.js"></script>
+</body>
+</html>

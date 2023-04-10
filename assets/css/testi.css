@@ -1,0 +1,133 @@
+.container-card{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header header"
+    "main main main" "footer footer footer";
+    grid-template-columns: auto auto auto;
+}
+
+header,
+main,
+footer{
+    margin: 5%;
+}
+
+header{
+    grid-area: header;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+header h1, h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 30px;
+}
+
+footer{
+    grid-area: footer;
+    display: none;
+}
+
+.card-project{
+    margin: 0 20px;
+    width: 300px;
+    height: max-content;
+    border-radius: 10px;
+    background-color:#fcfcfc;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 1px #dbdbdb;
+}
+
+.content img{
+    max-width: 300px;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.content span{
+    font-size:medium;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.content .text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content .text p{
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* rating style */
+.rating{
+    padding-top: 20px;
+}
+
+.rating ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating ul li{
+    list-style-type: none;
+}
+
+.rating ul li i{
+    padding-left: 7px;
+}
+
+.rating ul li button{
+    background-color: #000;
+    color: white;
+    padding: 1px 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px solid #656565;
+    cursor: pointer;
+}
+
+/* responsive css */
+@media only screen and (max-width:786px){
+    .container-card{
+        grid-template-areas: "header"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .container-card main{
+        grid-template-areas: "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .container-card{
+        grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main{
+        grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+        grid-template-columns: auto auto;
+    }
+}   
