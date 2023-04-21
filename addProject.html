@@ -28,14 +28,27 @@
             <ul>
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="addProject.html" class="active">My Project</a></li>
+                <li><a href="testi.html">Testimonial</a></li>
             </ul>
         </div>
         
         <div class="right-nav">
             <a href="contact-me.html">Contact Me</a>
         </div>
+
+        <button onclick="showHamburger()" id="open">
+            <i class="fa fa-bars"></i>
+        </button>
+
     </nav>
     <!-- end navbar -->
+
+    <div class="container-hamburger" id="container-hamburger">
+        <a href="index.html">Home</a>
+        <a href="addProject.html">My Project</a>
+        <a href="testi.html">Testimonial</a>
+        <a href="contact-me.html">Contact</a>
+    </div>
 
     <form onsubmit="getProject(event)">
         <div class="container-addProject">
@@ -228,5 +241,6 @@
     </div>
     
     <script src="assets/js/script.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 </html>

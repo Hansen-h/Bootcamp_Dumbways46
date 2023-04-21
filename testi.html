@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web | Contact Me</title>
+    <title>Personal Web | Testimonial</title>
 
     <!-- font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,11 +16,9 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/contact-me.css">
-
+    <link rel="stylesheet" href="./assets/css/testi.css">
 </head>
 <body>
-
     <!-- start navbar -->
     <nav>
         <div class="left-nav">
@@ -28,70 +26,65 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="addProject.html">My Project</a></li>
-                <li><a href="testi.html">Testimonial</a></li>
+                <li><a href="testi.html" class="active">Testimonial</a></li>
             </ul>
         </div>
-
+        
         <div class="right-nav">
             <a href="contact-me.html">Contact Me</a>
         </div>
-        
+
         <button onclick="showHamburger()" id="open">
             <i class="fa fa-bars"></i>
         </button>
     </nav>
     <!-- end navbar -->
 
-    <!-- hamburger menu -->
     <div class="container-hamburger" id="container-hamburger">
         <a href="index.html">Home</a>
         <a href="addProject.html">My Project</a>
         <a href="testi.html">Testimonial</a>
         <a href="contact-me.html">Contact</a>
     </div>
-    <!-- end -->
 
-    <form action="">
-        <div class="container-form">
-            <h1>Get in touch</h1>
-
-            <div class="name">
-                <label for="name">Name
-                    <input type="text" id="name" placeholder="input your name">
-                </label>
-            </div>
-            <div class="email">
-                <label for="email">Email
-                    <input type="email" id="email" placeholder="input your email">
-                </label>
-            </div>
-            <div class="phoneNumber">
-                <label for="phone-number">Phone Number
-                    <input type="text" id="phone-number" placeholder="input your phone number">
-                </label>
-            </div>
-            <div class="subject">
-                <label for="subject">Subject
-                    <select name="Subject" id="subject">
-                        <option value="Fullstack">Fullstack</option>
-                        <option value="Backend">Backend</option>
-                        <option value="Frontend">Frontend</option>
-                    </select>
-                </label>
-            </div>
-            <div class="message">
-                <label for="msg">Your Message
-                    <textarea name="" id="msg" cols="30" rows="10"></textarea>
-                </label>
+    <div class="container-card" id="conten">
+        <header><h1>My Testimonial</h1></header>
+        <main>
+            <div class="card-project" id="testimonials">
+            <!-- <div class="card-project">
+                <div class="content">
+                    <img src="./assets/images/programmin-990x500.jpg" alt="image">
+                    <div class="text">
+                        <p>'Lorem Ipsum has been the industry's standard dummy text ever since the 1500s'</p>
+                    </div>
+                    <span><p>- Surya surya</p></span>
+                </div>
             </div>
 
-            <div class="btn">
-                <button type="button" onclick="getData()">submit</button>
+            <div class="card-project">
+                <div class="content">
+                    <img src="./assets/images/programmin-990x500.jpg" alt="image">
+                    <div class="text">
+                        <p>'Lorem Ipsum has been the industry's standard dummy text ever since the 1500s'</p>
+                    </div>
+                    <span><p>- Surya surya</p></span>
+                </div>
             </div>
-        </div>
-    </form>
+            
+            <div class="card-project">
+                <div class="content">
+                    <img src="./assets/images/programmin-990x500.jpg" alt="image">
+                    <div class="text">
+                        <p>'Lorem Ipsum has been the industry's standard dummy text ever since the 1500s'</p>
+                    </div>
+                    <span><p>- Surya surya</p></span>
+                </div>
+            </div> -->
+            </div>
+        </main>
+    </div>
 
-    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/testi.js"></script>
 </body>
 </html>
