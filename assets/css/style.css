@@ -4,7 +4,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#active{
+    font-weight: bold;
+}
+
 nav{
+    background-color: #ecebeb;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+/* nav{
     display: flex;
     justify-content: space-between;
     height: 5vh;
@@ -153,10 +164,12 @@ nav{
 .right-card p{
     text-align: center;
     padding-bottom: 7px;
-}
+} */
 
-@media (max-width:858px){
+/* @media (max-width:858px){
     nav{
         flex-direction: row;
     }
-}
+} */
+
+/* responsive */
