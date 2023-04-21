@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Nobita",
+        "rating" : 2,
+        "comment" : "Jika aku lemah, tidak mungkin aku bisa bertahan sampai saat ini",
+        "image" : "https://static.wikia.nocookie.net/doraemon/images/e/ee/Nobita_Nobi_2005.jpg/revision/latest?cb=20190616144959&path-prefix=id"
+    },
+    {
+        "name" : "Doraemon",
+        "rating" : 5,
+        "comment" : "Jangan menengok ke masa lalu terus, lebih baik belajar dari sekarang untuk masa depanmu",
+        "image" : "https://magdalene.co/wp-content/uploads/2023/02/Doraemon3-copy-770x470.jpg"
+    },
+    {
+        "name" : "Giant",
+        "rating" : 3,
+        "comment" : "Mana bisa aku diam saja jika ada teman yang butuh pertolongan",
+        "image" : "https://cdn.idntimes.com/content-images/post/20181213/giant-doraemon-2f3568cbb02fb1623af42092eda858a8_600x400.jpg"
+    },
+    {
+        "name" : "Shizuka",
+        "rating" : 4,
+        "comment" : "Jangan khawatir, aku selalu ada untukmu",
+        "image" : "https://static.wikia.nocookie.net/doraemon/images/0/04/Shizuka_Minamoto_2005.jpg/revision/latest?cb=20200228143836&path-prefix=id"
+    },
+    {
+        "name" : "Suneo",
+        "rating" : 3,
+        "comment" : "Di dunia ini yang penting adalah uang",
+        "image" : "https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/hops/2020/07/Suneo_2005_anime_ID.png"
+    }
+]
