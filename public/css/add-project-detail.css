@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
 }
 
 .grid-container {
@@ -64,7 +63,6 @@
   margin-right: 2.5%;
 }
 
-
 .left-tech{
   display: flex;
   align-items: center;
@@ -100,4 +98,3 @@
   text-align: justify;
   padding-top: 10px;
 }
-

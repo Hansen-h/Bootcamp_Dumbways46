@@ -1,33 +1,3 @@
-function getData() {
-  // get value from id in html
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let phoneNumber = document.getElementById("phone-number").value;
-  let subject = document.getElementById("subject").value;
-  let msg = document.getElementById("msg").value;
-
-  if ((name, email, phoneNumber, subject, (message = ""))) {
-    alert("Tolong data segera diisi");
-  } else {
-    alert("Data akan segera dikirim melalui email");
-  }
-
-  const emailReceive = "hanseenn01@gmail.com";
-
-  let mailTo = document.createElement("a");
-  mailTo.href = `mailto:${emailReceive}?subject=${subject}&body=Halo nama saya ${name}, saya ingin ${msg}, bisakah anda menghubungi saya di ${phoneNumber}`;
-  mailTo.click();
-
-  let show = {
-    name,
-    email,
-    phoneNumer,
-    subject,
-    msg,
-  };
-  console.log(show);
-}
-
 let blogs = [];
 
 function getProject(e) {
@@ -84,7 +54,7 @@ function getProject(e) {
       if (duration > 0) duration = `${duration} weeks`;
       else {
         duration = Math.floor(distance / (24 * 60 * 60 * 1000));
-        if (duration > 0) duration = `${duration} days` ;
+        if (duration > 0) duration = `${duration} days`;
         else {
           duration = Math.floor(distance / (60 * 60 * 1000));
           if (duration > 0) duration = `${duration} hours`;
@@ -123,41 +93,45 @@ function getProject(e) {
 }
 
 function showProject() {
-  document.getElementById("conten").innerHTML = "";
+  document.getElementById("take").innerHTML = "";
   for (let i = 0; i <= blogs.length; i++) {
-    document.getElementById("conten").innerHTML += `<div class="container-card">
-            <main>
-                <div class="card-project">
-                    <div class="content">
-                        <img src=${blogs[i].upImg} alt="image">
-                        <a href="add-project-detail.html"><h4>${
-                          blogs[i].projectName
-                        }</h4></a>
-                        <span><p>${blogs[i].duration}</p></span>
-                        <div class="text">
-                            <p>${blogs[i].desc}</p>
-                        </div>
-
-                        <!-- technologies -->
-                        <div class="tech">
+    document.getElementById(
+      "take"
+    ).innerHTML += `<div class="container-fluid px-5 my-lg-5 p-lg-5">
+    <div class="row row-cols-1 row-cols-md-3 g-lg-5 mt-5">
+        <div class="col">
+            <div class="card h-100 p-lg-3" style="max-width:330px; box-shadow: 0 0 10px #dbdbdb;">
+                <img src=${blogs[i].upImg} class="card-img" alt="image">
+                <div class="card-body p-0 mt-4">
+                    <a href="#" class="nav-link"><h6 class="card-title fw-bold">${blogs[i].projectName}</h6></a>
+                    <small class="text-muted">${blogs[i].duration}</small>
+                    <p class="card-text mt-3" style="text-align: justify;">${blogs[i].desc}</p>
+                    <div class="card-text d-flex ">
+                        <div class="mt-2 fs-2 pb-2 ">
+                            <a class="navbar-brand me-4" href="#">
                             ${blogs[i].nodeJS}
+                            </a>
+                            <a class="navbar-brand me-4" href="#">
                             ${blogs[i].reactJS}
+                            </a>
+                            <a class="navbar-brand me-4 " href="#">
                             ${blogs[i].python}
+                            </a>
+                            <a class="navbar-brand me-4 " href="#">
                             ${blogs[i].golang}
+                            </a>
                         </div>
-                        <!-- end-technologies -->
-                        
                     </div>
-                    
-                    <button>edit</button>
-                    <button>delete</button>
+                    <div class="card-text mt-2 d-flex">
+                        <a class="btn bg-black text-white fw-semibold w-50 me-1 p-0 rounded-pill" href="#"
+                            role="button">edit</a>
+                        <a class="btn bg-black text-white w-50 ms-1 p-0 fw-semibold rounded-pill" href="#"
+                            role="button">delete</a>
+                    </div>
                 </div>
-                
-            </main>
-
-            <footer>Kosongan</footer>
+            </div>
         </div>
-        `;
+`;
   }
 }
 
